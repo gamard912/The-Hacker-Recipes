@@ -78,12 +78,12 @@ Get-ADComputer "Account" -Properties TrustedForDelegation, TrustedToAuthForDeleg
 
 
 
-| Property | Delegation type |  |  |
-| --- | --- | --- | --- |
-| `TrustedForDelegation` | Unconstrained Delegation |  |  |
-| `TrustedToAuthForDelegation` | Constrained Delegation with Protocol Transition |  |  |
-| `AllowedToDelegateTo` | Constrained Delegation, and list of services allowed to delegate to |  |  |
-| `PrincipalsAllowedToDelegateToAccount` (i.e. refers to the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute) | RBCD, list of services that can delegate to the account |  |  |
+| Property | Delegation type |
+| --- | --- |
+| `TrustedForDelegation` | Unconstrained Delegation |
+| `TrustedToAuthForDelegation` | Constrained Delegation with Protocol Transition |
+| `AllowedToDelegateTo` | Constrained Delegation, and list of services allowed to delegate to |
+| `PrincipalsAllowedToDelegateToAccount` (i.e. refers to the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute) | RBCD, list of services that can delegate to the account |
 
 
 
